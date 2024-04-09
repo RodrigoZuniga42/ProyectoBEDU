@@ -2,8 +2,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="stylesheet" href="styles/laplace.css">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
@@ -16,9 +16,10 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
               
               <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About Us</a>
+                <a class="nav-link" href="login.html">Login</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -26,7 +27,7 @@
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><a class="dropdown-item" href="#">Legal Specialist</a></li>
-                  <li><a class="dropdown-item" href="#">Paralegal</a></li>
+                  <li><a class="dropdown-item" href="#">Consultor</a></li>
                   
                 </ul>
               </li>
@@ -37,6 +38,22 @@
           </div>
         </div>
       </nav>
+      <div class="container">
+        <h1>Login</h1>
+        <form action="#">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <button type="submit">Login</button>
+          </div>
+        </form>
+      </div>
       <footer class="footer mt-auto py-3 bg-light">
         <div class="container">
           <span class="me-md-auto">Copyright &copy; 2024 Laplace.</span>

@@ -1,9 +1,11 @@
 <html lang="en">
+  
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="styles/css/styles.css">
+    <script defer src="utils.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
 </head>
@@ -38,31 +40,52 @@
           </div>
         </div>
       </nav>
-      <div class="container">
-        <h1>Login</h1>
-        <form action="#">
-          <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
+      
+        <div class="login">
+          <h1>Bienvenido</h1>
+          <div class="botones">
+              <button id="iniciarSesionBtn">Iniciar sesión</button>
+              <button id="registrarseBtn">Registrarse</button>
           </div>
-          <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
+          <div id="formularioInicioSesion" class="formulario oculto">
+              <h2>Inicio de sesión</h2>
+              <form>
+                  <label for="correoInicioSesion">Correo electrónico:</label>
+                  <input type="email" id="correoInicioSesion" required>
+                  <label for="contrasenaInicioSesion">Contraseña:</label>
+                  <input type="password" id="contrasenaInicioSesion" required>
+                  <button type="submit">Iniciar sesión</button>
+              </form>
           </div>
-          <div class="form-group">
-            <button type="submit">Login</button>
+          <div id="formularioRegistro" class="formulario oculto">
+              <h2>Registro</h2>
+              <form>
+
+                  <label for="nombreRegistro">Nombre completo:</label>
+                  <input type="text" id="nombreRegistro" required>
+                  <label for="correoRegistro">Correo electrónico:</label>
+                  <input type="email" id="correoRegistro" required>
+                  <label for="contrasenaRegistro">Contraseña:</label>
+                  <input type="password" id="contrasenaRegistro" required>
+                  <button type="submit">Registrarse</button>
+                  
+              </form>
           </div>
-        </form>
       </div>
-      <footer class="footer mt-auto py-3 bg-light">
+    
+      <!-- <footer class="footer mt-auto py-3 bg-light">
         <div class="container">
           <span class="me-md-auto">Copyright &copy; 2024 Laplace.</span>
           <a href="#" class="text-muted">Terms</a>
           <a href="#" class="text-muted">Privacy</a>
         </div>
       </div>
-      </footer>
+      </footer> -->
+      <script defer src="utils.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      includeHTML();
+      </script>
 </body>
 </html>

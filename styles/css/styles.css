@@ -175,16 +175,20 @@ p {
 /*# sourceMappingURL=styles.css.map */
 
 /* Inicio de sesion*/
-.login {
+.login, .registro {
     text-align: center;
     margin: 0 auto;
     width: 500px;
 }
 
-.botones {
+.resgistroBtn, .loginBTn {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+}
+.resgistroBtn{
+  gap: 15px;
+  
 }
 
 .formulario {
@@ -229,3 +233,4 @@ p {
   .formulario.oculto {
       display: none;
   }
+  

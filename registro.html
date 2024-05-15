@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Registro</title>
     <link rel="stylesheet" href="styles/css/styles.css">
     <script defer src="utils.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -41,14 +41,14 @@
         </div>
       </nav>
       
-        <div class="login">
-          <h1>Bienvenido</h1>
-          <div class="loginBtn">
-              <button class="btn1" id="iniciarSesionBtn">Iniciar sesión</button>
-              <button class="btn2" id="registrarseBtn">Registrarse</button>
+        <div class="registro">
+          <h1>Bienvenido al Registro</h1>
+          <div class="resgistroBtn">
+              <button id="clienteBtn">Soy un cliente, buscando un profesional</button>
+              <button id="profesionalBtn">Soy un Profesional, ofreciendo mis servicios</button>
           </div>
-          <div id="formularioInicioSesion" class="formulario oculto ">
-              <h2>Inicio de sesión</h2>
+          <div id="formularioCliente" class="formulario oculto">
+              <h2>Registro cliente</h2>
               <form>
                   <label for="correoInicioSesion">Correo electrónico:</label>
                   <input type="email" id="correoInicioSesion" required>
@@ -57,8 +57,8 @@
                   <button type="submit">Iniciar sesión</button>
               </form>
           </div>
-          <div id="formularioRegistro" class="formulario oculto ">
-              <h2>Registro</h2>
+          <div id="formularioProfesional" class="formulario oculto ">
+              <h2>Registro Profesional</h2>
               <form>
 
                   <label for="nombreRegistro">Nombre completo:</label>
@@ -85,5 +85,4 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     
-</body>
 </html>

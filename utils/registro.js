@@ -45,15 +45,21 @@ document.getElementById('btnCliente').addEventListener('click', function() {
     const nombreProfesional= document.querySelector('#nombreProfesional').value;
     const emailProfesional= document.querySelector('#correoProfesional').value;
     const constrasenaProfesional = document.querySelector('#contrasenaProfesional').value;
+    const especialidad = document.querySelector('#especialidad').value;
+    const anios = document.querySelector('#anios').value;
 
-    const UsersProfesionales =JSON.parse(localStorage.getItem('usersProfesionales'))|| [];
-    const isProfesionalUserRegistred= UsersProfesionales.find( userProfesional => userProfesional.emailProfesional === emailProfesional)
-    if(isProfesionalUserRegistred){
+    const UsersPro =JSON.parse(localStorage.getItem('usersPro'))|| [];
+    const isProlUserRegistred= UsersPro.find( userPro => userPro.emailProfesional === emailProfesional)
+   
+
+    if(isProlUserRegistred){
       return alert ('El Profesional ya esta registrado!')
+      
     }
 
-    UsersProfesionales.push({nombreProfesional : nombreProfesional , emailProfesional : emailProfesional, constrasenaProfesional: constrasenaProfesional});
-    localStorage.setItem('usersProfesioanles',JSON.stringify(UsersProfesionales))
+    UsersPro.push({nombreProfesional : nombreProfesional , emailProfesional : emailProfesional, constrasenaProfesional: constrasenaProfesional,
+       anios: anios, especialidad: especialidad});
+    localStorage.setItem('usersPro',JSON.stringify(UsersPro))
     alert('Registro de Profesional Exitoso!')
     window.location.href = 'login.html';
 

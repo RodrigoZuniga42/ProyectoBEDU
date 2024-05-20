@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+  }
+  
+  .client-header, .projects, .search {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  }
+  
+  .client-info {
+    overflow: hidden;
+  }
+  
+  .name {
+    font-size: 28px;
+    font-weight: 600;
+  }
+  
+  .location {
+    font-size: 18px;
+    color: #888;
+    margin-top: 5px;
+  }
+  
+  .description {
+    margin-top: 10px;
+    line-height: 1.6;
+    border: 1px solid transparent;
+    padding: 5px;
+  }
+  
+  .description:focus {
+    border: 1px solid #aaa;
+  }
+  
+  .project {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .project-title {
+    font-size: 20px;
+    font-weight: 600;
+  }
+  
+  .project-description {
+    font-size: 16px;
+    margin-top: 5px;
+  }
+  
+  button {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background: #0056b3;
+  }
+  
+  input[type="text"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .footer {
+    text-align: center;
+    color: #aaa;
+    margin-top: 40px;
+    font-size: 14px;
+  }

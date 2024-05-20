@@ -1,0 +1,17 @@
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f4; color: #333; }
+.container { max-width: 800px; margin: auto; overflow: hidden; padding: 0 20px; }
+.profile-header { background: #fff; border: 1px solid #ddd; padding: 20px; border-radius: 5px; margin-top: 20px; box-shadow: 0 5px 10px rgba(0,0,0,0.1); }
+.profile-photo { float: left; width: 150px; height: 150px; margin-right: 20px; background: url('profile-photo.jpg') no-repeat center center; background-size: cover; border-radius: 50%; cursor: pointer; }
+.profile-info { overflow: hidden; }
+.name { font-size: 28px; font-weight: 600; }
+.title { font-size: 18px; color: #888; margin-top: 5px; }
+.bio { margin-top: 10px; line-height: 1.6; border: 1px solid transparent; padding: 5px; }
+.bio:focus { border: 1px solid #aaa; }
+.skills { list-style: none; padding: 0; margin-top: 10px; }
+.skill { display: inline-block; background: #007bff; color: #fff; padding: 5px 15px; margin: 5px; border-radius: 3px; font-size: 14px; }
+.skill:focus { background: #0056b3; }
+.updates, .search { margin-top: 20px; }
+textarea, input[type="text"] { width: 100%; padding: 10px; margin-top: 10px; border: 1px solid #ddd; border-radius: 5px; }
+button { background: #007bff; color: #fff; padding: 10px 15px; border: none; border-radius: 5px; cursor: pointer; margin-top: 10px; }
+button:hover { background: #0056b3; }
+.footer { text-align: center; color: #aaa; margin-top: 40px; font-size: 14px; }

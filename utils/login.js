@@ -1,16 +1,14 @@
-// Inicio sesion
-const iniciarSesionBtn = document.getElementById('iniciarSesionBtn');
-const registrarseBtn = document.getElementById('registrarseBtn');
-const formularioInicioSesion = document.getElementById('formularioInicioSesion');
-const formularioRegistro = document.getElementById('formularioRegistro');
+const loginForm= document.querySelector('#loginForm');
+loginForm.addEventListener('submit', (e)=>{
+    e.preventDefault();
 
-iniciarSesionBtn.addEventListener('click', () => {
-    formularioInicioSesion.classList.remove('oculto');
-    formularioRegistro.classList.add('oculto');
-});
-
-registrarseBtn.addEventListener('click', () => {
-    formularioRegistro.classList.remove('oculto');
-    formularioInicioSesion.classList.add('oculto');
-});
-
+    const email= document.querySelector('#emailLogin');
+    const contrasena = document.querySelector('#password');
+    const UsersClientes =JSON.parse(localStorage.getItem('usersClientes'))|| [];
+    const UsersProfesionales =JSON.parse(localStorage.getItem('usersProfesionales'))|| [];
+    const validUserClientes= UsersClientes.find(userCliente=> userCliente.email === email && userCliente.contrasena === contrasena)
+    if(!validUserClientes){
+        return alert('Usuario o contrasena incorrectos')
+    }
+    alert(`Bienvenido'   ${validUserClientes.nombreCliente}`)
+})
